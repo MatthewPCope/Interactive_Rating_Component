@@ -5,6 +5,7 @@
     --dark-blue: hsl(213, 19%, 18%);
     --white: hsl(0, 0%, 100%);
     --very-dark-blue: hsl(216, 12%, 8%);
+    --circle-background: #272e38;
 }
 
 * {
@@ -27,15 +28,14 @@ body {
     width: 100%;
     height: 100vh;
     padding: 4.8rem;
-    
 }
 .main{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    border-radius: 10px;
-    background-color: var(--dark-blue);
+    border-radius: 30px;
+    background-color: #202831;
     gap: 2.4rem;
     padding: 3.6rem 2.4rem;
     font-size: 1.4rem;
@@ -49,12 +49,38 @@ body {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background-color: var(--light-gray);
+    background-color: var(--circle-background);
+}
+.circle{
+    transition: all .3s;
 }
 .circles{
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
 }
+.circle:hover,
+.btn:hover{
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+
+}
+.btn{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+    padding: 1rem ;
+    border-radius: 100px;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    letter-spacing: .3rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
 @media(min-width: 31.25em){
     .main{
         width:41.2rem
