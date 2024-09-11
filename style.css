@@ -1,0 +1,22 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+
+    --light-gray:  hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background-color: var(--very-dark-blue);
+}
+body {
+    font-family: "Overpass", sans-serif;
+    color: var(--white);
+}
