@@ -60,17 +60,23 @@ h1{
 }
 .circle{
     transition: all .3s;
+    color: var(--light-gray);
 }
 .circles{
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
 }
+.btn:hover{
+    color: var(--very-dark-blue);
+}
 .circle:hover,
+.circle.selected{
+    color: var(--dark-blue);
+    background-color: var(--white);
+}
 .btn:hover{
     background-color: var(--white);
-    color: var(--very-dark-blue);
-
 }
 .btn{
     width: 100%;
@@ -87,9 +93,44 @@ h1{
     font-family: inherit;
     cursor: pointer;
 }
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.rating{
+    background-color: var(--circle-background);
+    padding: .6rem 1.1rem;
+    border-radius: 100px;
+    color: var(--orange);
+}
+.thank-you {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #202831;
+    gap: 2rem;
+    padding: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.thank-you-text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--light-gray);
+}
 
 @media(min-width: 31.25em){
     .main{
         width:41.2rem
-    };
+    }
+    .thank-you{
+        width: 41.2rem;
+    }
 }
