@@ -70,9 +70,14 @@ h1{
 .btn:hover{
     color: var(--very-dark-blue);
 }
+.circle:hover{
+    background-color: var(--orange);
+}
 .circle:hover,
 .circle.selected{
     color: var(--dark-blue);
+}
+.circle.selected{
     background-color: var(--white);
 }
 .btn:hover{
