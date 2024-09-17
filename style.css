@@ -80,6 +80,9 @@ h1{
 .circle.selected{
     background-color: var(--white);
 }
+.circle.selected{
+    background-color: var(--white);
+}
 .btn:hover{
     background-color: var(--white);
 }
